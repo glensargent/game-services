@@ -1,0 +1,12 @@
+apiVersion: skaffold/v2alpha4
+kind: Config
+metadata:
+  name: game-services
+build:
+  artifacts:
+  - image: orchestrator
+    context: src/orchestrator
+deploy:
+  kubectl:
+    manifests:
+    - kubernetes/orchestrator.yaml

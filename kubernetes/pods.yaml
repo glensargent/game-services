@@ -6,8 +6,8 @@ spec:
   hostNetwork: true
   restartPolicy: Never
   containers:
-    - name: worlds-server
-      image: docker.io/sago007/openarena:latest
+    - name: game-server
+      image: docker.io/tutum/hello-world
       env:
         - name: SESSION_NAME
           valueFrom:
