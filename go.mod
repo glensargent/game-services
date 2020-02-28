@@ -4,6 +4,7 @@ go 1.14
 
 require (
 	github.com/go-chi/chi v4.0.3+incompatible
+	github.com/go-chi/render v1.0.1
 	golang.org/x/crypto v0.0.0-20200221231518-2aa609cf4a9d // indirect
 	golang.org/x/net v0.0.0-20200226121028-0de0cce0169b // indirect
 	golang.org/x/oauth2 v0.0.0-20200107190931-bf48bf16ab8d // indirect

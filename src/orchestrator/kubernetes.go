@@ -36,9 +36,9 @@ func (c *cluster) init() {
 	}
 }
 
-func (c cluster) makePod(yaml []byte) error {
+func (c cluster) makePod(bytes []byte) error {
 	var p v1.Pod
-	err := json.Unmarshal([]byte(yaml), &p)
+	err := json.Unmarshal(bytes, &p)
 	if err != nil {
 		return err
 	}

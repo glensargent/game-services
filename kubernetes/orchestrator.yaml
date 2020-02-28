@@ -26,7 +26,7 @@ kind: Service
 metadata:
   name: orchestrator
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: orchestrator
   ports:
