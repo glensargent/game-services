@@ -1,0 +1,27 @@
+{
+  "kind": "Pod",
+  "apiVersion": "v1",
+  "metadata": {
+    "generateName": "game-"
+  },
+  "spec": {
+    "hostNetwork": true,
+    "restartPolicy": "Never",
+    "containers": [
+      {
+        "name": "game-server",
+        "image": "docker.io/tutum/hello-world",
+        "env": [
+          {
+            "name": "SESSION_NAME",
+            "valueFrom": {
+              "fieldRef": {
+                "fieldPath": "metadata.name"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
